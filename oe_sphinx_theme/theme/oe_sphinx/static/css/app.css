@@ -28240,6 +28240,55 @@ a.headerlink {
   display: none;
 }
 
+/* line 46, ../scss/pyoes/_oe-sphinx.scss */
+.toggle-box {
+  display: none;
+}
+
+/* line 50, ../scss/pyoes/_oe-sphinx.scss */
+.collapsable .toggle-box + label {
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  line-height: 21px;
+  margin-bottom: 5px;
+}
+
+/* line 58, ../scss/pyoes/_oe-sphinx.scss */
+.collapsable .toggle-box + label + dd {
+  display: none;
+  margin-bottom: 10px;
+}
+
+/* line 63, ../scss/pyoes/_oe-sphinx.scss */
+.collapsable .toggle-box:checked + label + dd {
+  display: block;
+}
+
+/* line 67, ../scss/pyoes/_oe-sphinx.scss */
+.collapsable .toggle-box + label:before {
+  background-color: #4F5150;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  content: "+";
+  display: block;
+  float: left;
+  font-weight: bold;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 5px;
+  margin-top: 5px;
+  text-align: center;
+  width: 20px;
+}
+
+/* line 85, ../scss/pyoes/_oe-sphinx.scss */
+.collapsable .toggle-box:checked + label:before {
+  content: "\2212";
+}
+
 @media only screen and (max-width: 578px) {
   /* line 5, ../scss/pyoes/_oe-mediaqueries.scss */
   .bgimage, #service-navigation, .temp-embed {
