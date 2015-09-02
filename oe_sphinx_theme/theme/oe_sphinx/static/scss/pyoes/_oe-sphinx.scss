@@ -1,0 +1,44 @@
+
+.bgimage {
+	height:80px;
+}
+
+.bgimage-bouwkunde {
+	height:80px;
+}
+
+.logo-block {
+    height: 80px;
+}
+
+.logo-block .logo-block-title {
+    height: 80px;
+    h1 {
+		font-weight:400;
+		font-size:27px;
+		font-family: "Flanders Art Sans",​Helvetica,​Arial,​sans-serif;
+	}
+}
+
+.logo-block {
+	width:450px;
+	h1,h2,h3 {
+		font-family: "Flanders Art Sans",​Helvetica,​Arial,​sans-serif;
+		font-weight:400px;
+		padding-top:10px;
+	}
+	img {
+		padding-top:10px;
+	}
+}
+
+.header-border {
+    background: #753f7f none repeat scroll 0 0 !important;
+    height: 5px;
+    width: 100%;
+    margin-bottom:30px;
+}
+
+a.headerlink {
+	display:none;
+}

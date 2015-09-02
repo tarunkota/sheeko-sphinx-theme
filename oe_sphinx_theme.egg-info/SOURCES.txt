@@ -1,0 +1,12 @@
+AUTHORS
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+oe_sphinx_theme/__init__.py
+oe_sphinx_theme.egg-info/PKG-INFO
+oe_sphinx_theme.egg-info/SOURCES.txt
+oe_sphinx_theme.egg-info/dependency_links.txt
+oe_sphinx_theme.egg-info/not-zip-safe
+oe_sphinx_theme.egg-info/requires.txt
+oe_sphinx_theme.egg-info/top_level.txt

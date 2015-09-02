@@ -1,0 +1,109 @@
+{%- macro script() %}
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '{{ url_root }}',
+        VERSION:     '{{ release|e }}',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '{{ '' if no_search_suffix else file_suffix }}',
+        HAS_SOURCE:  {{ has_source|lower }}
+      };
+    </script>
+    {%- for scriptfile in script_files %}
+    <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
+    {%- endfor %}
+{%- endmacro %}
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+{% set active_title = active_title -%}
+
+{% set service_nav = service_nav -%}
+{% set main_nav = main_nav -%}
+{% set active_main_nav = active_main_nav -%}
+{% set login_nav = login_nav -%}
+{% set login_sub_nav = login_sub_nav -%}
+{% set service_nav = service_nav -%}
+{% set home_link = home_link -%}
+{% set footer_nav = footer_nav -%}
+{% set mailto_error = mailto_error -%}
+
+{% set default_footer_nav = [
+    ('Toegankelijkheid', '/toegankelijkheid'),
+    ('Juridische Informatie', '/juridische-informatie')
+] -%}
+{% set footer_nav = footer_nav|default(default_footer_nav) -%}
+
+{% set datum_copyright = datum_copyright|default('2017') -%}
+
+<head>
+    {% block html_header scoped %}
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>{% block html_title %}Onroerend Erfgoed{% endblock %}</title>
+
+        <script type="text/javascript">
+            try {
+                Typekit.load();
+            } catch (e) {
+                console.log(e);
+            }
+        </script>
+        <link rel="stylesheet" href="{% block app_css %}{{ pathto('_static/css/app.css', 1) }}{% endblock %}" type="text/css" />
+
+        <script src="{{  pathto('_static/bower_components/modernizr/modernizr.js',1) }}"></script>
+
+        {% block css -%}
+            {% set default_css_files = []-%}
+
+            {% set css_files = css_files|default(default_css_files) -%}
+            {% for css in css_files -%}
+            <link rel="stylesheet" href="{{ css }}"/>
+            {% endfor %}
+        {% endblock -%}
+
+        {% block javascript scoped -%}
+            {% set default_js_files = [
+                pathto('_static/bower_components/jquery/dist/jquery.min.js',1),
+            ] -%}
+            {% set js_files = js_files|default(default_js_files) -%}
+            {% for js in js_files -%}
+                <script type="text/javascript" src="{{ js }}"></script>
+            {% endfor -%}
+            {{script() }}
+
+
+        {% endblock -%}
+
+    {% endblock %}
+{% block extrahead %} {% endblock %}
+
+</head>
+<body>
+<div class="container">
+    <script type="text/javascript" src="//widgets.vlaanderen.be/widget/live/5499d8dc0848446e91022c6dba9db343?mtime=1421237274"></script>
+    {% block header scoped %}
+        {% include "templates/header.jinja2" %}
+    {% endblock %}
+
+    {% block messages scoped %}
+    {% endblock %}
+
+    {% block content scoped %}
+      {% endblock %}
+    <div class="push"></div>
+</div>
+<div id="footerContainer">
+  {% include "templates/footer.jinja2" %}
+
+  <script type="text/javascript" src="//widgets.vlaanderen.be/widget/live/79a9f632dc8e45aa884f7924ee16f7bf?mtime=1421237274"></script>
+</div>
+<script src="{{ pathto('_static/bower_components/foundation/js/foundation.min.js', 1) }}"></script>
+<script src="{{ pathto('_static/js/app.js', 1) }}"></script>
+
+</body>
+</html>
+
+

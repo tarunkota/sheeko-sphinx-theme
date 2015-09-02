@@ -1,0 +1,45 @@
+{% extends "templates/layout.jinja2" %}
+
+{% block content %}
+<!-- content -->
+
+    <div class="row">
+      <div class="large-9 columns">
+
+        <div class="panel">
+
+            <div class="row">
+
+				{% block body %} {% endblock %}
+           </div>
+
+        </div>
+      </div>
+
+      <div class="large-3 columns">
+        <div class="row">
+        {%- block sidebarsearch %}
+        {%- include "searchbox.html" %}
+        {%- endblock %}
+       </div>
+
+       <div class="row">
+          <div class="panel">
+            <h5><a href="{{ pathto(master_doc) }}">{{ _('Inhoud') }}</a></h5>
+              <ul class="dropdown-menu globaltoc"
+                    role="menu"
+                    aria-labelledby="dLabelGlobalToc">{{ toctree(maxdepth=3|toint, collapse=False, includehidden=theme_globaltoc_includehidden|tobool) }}</ul>
+              </ul>
+            <hr>
+            {{ toc }}
+          </div>
+       </div>
+      </div>
+
+
+
+    </div>
+
+{% endblock %}
+
+
