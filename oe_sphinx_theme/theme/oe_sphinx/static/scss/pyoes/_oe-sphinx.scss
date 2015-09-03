@@ -44,44 +44,57 @@ a.headerlink {
 }
 
 .toggle-box {
-display: none;
+  display: none;
 }
 
 .collapsable .toggle-box + label {
-cursor: pointer;
-display: block;
-font-weight: bold;
-line-height: 21px;
-margin-bottom: 5px;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  line-height: 21px;
+  margin-bottom: 5px;
 }
 
-.collapsable .toggle-box + label + dd{
-display: none;
-margin-bottom: 10px;
+.collapsable .toggle-box + label + div{
+  display: none;
+  margin-bottom: 10px;
 }
 
-.collapsable .toggle-box:checked + label + dd {
-display: block;
+.collapsable .toggle-box:checked + label + div {
+  display: block;
 }
 
 .collapsable .toggle-box + label:before {
-background-color: #4F5150;
--webkit-border-radius: 10px;
--moz-border-radius: 10px;
-border-radius: 10px;
-color: #FFFFFF;
-content: "+";
-display: block;
-float: left;
-font-weight: bold;
-height: 20px;
-line-height: 20px;
-margin-right: 5px;
-margin-top:5px;
-text-align: center;
-width: 20px;
+  background-color: #4F5150;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  content: "+";
+  display: block;
+  float: left;
+  font-weight: bold;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 5px;
+  margin-top:5px;
+  text-align: center;
+  width: 20px;
 }
 
 .collapsable .toggle-box:checked + label:before {
-content: "\2212";
+  content: "\2212";
+}
+
+.rst-content dl.collapstext dt{
+   border-top: 3px solid #a44697;
+   background: #fff0ff;
+}
+
+.textcontent {
+  padding-left:10px;
+}
+
+.rst-content tt {
+white-space:normal;
 }

@@ -59,8 +59,8 @@
             {% set default_css_files = []-%}
 
             {% set css_files = css_files|default(default_css_files) -%}
-            {% for css in css_files -%}
-            <link rel="stylesheet" href="{{ css }}"/>
+            {% for cssfile in css_files -%}
+                <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
             {% endfor %}
         {% endblock -%}
 

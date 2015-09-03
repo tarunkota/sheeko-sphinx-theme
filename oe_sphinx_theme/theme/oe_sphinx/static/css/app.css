@@ -28255,13 +28255,13 @@ a.headerlink {
 }
 
 /* line 58, ../scss/pyoes/_oe-sphinx.scss */
-.collapsable .toggle-box + label + dd {
+.collapsable .toggle-box + label + div {
   display: none;
   margin-bottom: 10px;
 }
 
 /* line 63, ../scss/pyoes/_oe-sphinx.scss */
-.collapsable .toggle-box:checked + label + dd {
+.collapsable .toggle-box:checked + label + div {
   display: block;
 }
 
@@ -28287,6 +28287,22 @@ a.headerlink {
 /* line 85, ../scss/pyoes/_oe-sphinx.scss */
 .collapsable .toggle-box:checked + label:before {
   content: "\2212";
+}
+
+/* line 89, ../scss/pyoes/_oe-sphinx.scss */
+.rst-content dl.collapstext dt {
+  border-top: 3px solid #a44697;
+  background: #fff0ff;
+}
+
+/* line 94, ../scss/pyoes/_oe-sphinx.scss */
+.textcontent {
+  padding-left: 10px;
+}
+
+/* line 98, ../scss/pyoes/_oe-sphinx.scss */
+.rst-content tt {
+  white-space: normal;
 }
 
 @media only screen and (max-width: 578px) {
