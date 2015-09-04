@@ -34,10 +34,20 @@
             {{ toc }}
           </div>
        </div>
+
+      {%- if show_source and has_source and sourcename %}      
+        <div class="row">
+          <div class="panel">
+            <div id="sourcelink">
+              <a href="{{ pathto('_sources/' + sourcename, true)|e }}"
+                 rel="nofollow">{{ _('Bekijk de bron van deze pagina &raquo;') }}</a>
+            </div>
+          </div>
+        </div>
+      {%- endif %}
+      
+
       </div>
-
-
-
     </div>
 
 {% endblock %}
