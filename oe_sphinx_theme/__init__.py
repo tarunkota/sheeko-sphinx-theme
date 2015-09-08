@@ -1,5 +1,3 @@
-"Custom Sphinx theme for projects written and maintained by Caktus Consulting Group."
-
 import os
 
 
