@@ -21,7 +21,7 @@ setup(
     include_package_data=True,
     url='http://www.onroerenderfgoed.be/',
     license='BSD',
-    description=u' '.join(__import__('oe_sphinx_theme').__doc__.splitlines()).strip(),
+    description='OE sphinx theme',
     classifiers=[
         'License :: OSI Approved :: BSD License',
         'Programming Language :: Python',      
