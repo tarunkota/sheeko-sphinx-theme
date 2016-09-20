@@ -20,6 +20,6 @@ def default_sidebars():
     sidebar on the index page and sub-pages.
     """
     return {
-        'index': ['index-sidebar.html', 'sourcelink.html', 'searchbox.html'],
-        '**': ['localtoc.html', 'relations.html', 'sourcelink.html', 'searchbox.html']
+        'index': ['searchbox.html', 'globaltoc.html', 'index-sidebar.html'],
+        '**': ['searchbox.html', 'localtoc.html', 'relations.html']
     }

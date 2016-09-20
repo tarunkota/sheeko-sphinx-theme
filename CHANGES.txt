@@ -1,3 +1,10 @@
+0.2.0 (??-??-2016)
+------------------
+
+- update theme to newest layout guidelines
+- rebuild theme based on basic theme
+- refactor rendering of sidebars
+
 0.1.0 (08-09-2015)
 ------------------
 

@@ -42,7 +42,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'OE Sphinx Theme'
-copyright = u'2012, Caktus Consulting Group'
+copyright = u'2014-2016, Flanders Heritage Agency'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
