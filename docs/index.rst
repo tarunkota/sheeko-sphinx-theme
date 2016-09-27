@@ -12,6 +12,13 @@ Contents
     :maxdepth: 2
 
     examples
-    usage
     contributing
     releases
+    folder/index
+    glossarium
+
+Indices and tables
+------------------
+
+* :ref:`genindex`
+* :ref:`search`
