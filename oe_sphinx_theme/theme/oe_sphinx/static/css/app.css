@@ -29284,3 +29284,19 @@ blockquote {
 .copyright {
   float: left;
 }
+
+/* line 267, ../scss/pyoes/_oe-sphinx.scss */
+.sphinxsidebar .sphinxsidebarwrapper .panel h4 {
+  color: #944EA1 !important;
+  font-size: 18px;
+}
+
+/* line 272, ../scss/pyoes/_oe-sphinx.scss */
+.sphinxsidebar .sphinxsidebarwrapper .panel .topless a {
+  color: #944EA1 !important;
+  text-decoration: none;
+}
+/* line 275, ../scss/pyoes/_oe-sphinx.scss */
+.sphinxsidebar .sphinxsidebarwrapper .panel .topless a:hover {
+  color: #7f438a;
+}

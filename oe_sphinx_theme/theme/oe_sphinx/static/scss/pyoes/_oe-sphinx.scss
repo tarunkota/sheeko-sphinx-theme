@@ -263,3 +263,16 @@ blockquote{
 .copyright {
   float:left;
 }
+
+.sphinxsidebar .sphinxsidebarwrapper .panel h4 {
+  color: #944EA1 !important;
+  font-size: 18px;
+}
+
+.sphinxsidebar .sphinxsidebarwrapper .panel .topless a {
+  color: #944EA1 !important;
+  text-decoration: none;
+  &:hover {
+    color: #7f438a;
+  }
+}
