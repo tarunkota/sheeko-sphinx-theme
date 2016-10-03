@@ -47,6 +47,8 @@ $header-height: 50px;
 
 // Restore dgrid css
 .dgrid table.dgrid-row-table { margin: 0; background: none; }
+.dgrid table th { width: auto; }
+.dgrid [class*="column"] + [class*="column"]:last-child { float: none; }
 .dgrid-sort-arrow { margin: 0; }
 
 // Tab container
@@ -69,10 +71,10 @@ $header-height: 50px;
 
 //uit adviezen
 .nihilo .dijitTabContainerBottomChildWrapper {  height: 100%; }
-.nihilo .dijitTabContainerBottom-child { height: 100%; width: 100%; background-color: #ffffff; display: flex; flex-direction: column; padding: 15px; }
-.nihilo .dijitTabContainerTop { display: flex; flex: 1 1 0; flex-direction: column; min-height: 0; }
-.nihilo .dijitTabPaneWrapper.dijitTabContainerTop-container { flex: 1; display: flex; flex-direction: column; min-height: 0; }
-.nihilo .dijitTabContainerTopChildWrapper.dijitVisible { flex: 1; overflow-y: auto; }
+.nihilo .dijitTabContainerBottom-child { height: 100%; width: 100%; background-color: #ffffff; display: flex; display: -ms-flexbox; flex-direction: column; -ms-flex-direction: column; padding: 15px; }
+.nihilo .dijitTabContainerTop { display: flex; display: -ms-flexbox; flex: 1 1 0; -ms-flex: 1 1; flex-direction: column; -ms-flex-direction: column; min-height: 0; }
+.nihilo .dijitTabPaneWrapper.dijitTabContainerTop-container { flex: 1; -ms-flex: 1; display: flex; display: -ms-flexbox; flex-direction: column; -ms-flex-direction: column; min-height: 0; }
+.nihilo .dijitTabContainerTopChildWrapper.dijitVisible { flex: 1; -ms-flex: 1; overflow-y: auto; }
 .nihilo  .dijitTabContainerTop-child { height: 100%; }  //fix voor type drop down
 
 // Restore dijit css
@@ -113,8 +115,8 @@ $header-height: 50px;
 .appMenu .menuHeader > * { padding: 0; height: 35px; position: relative; display: inline-block; }
 .appMenu .menuHeader .refreshLink { font-size: 0.875em; position: absolute; bottom: 0; right: 0; }
 .appMenu .menuHeader .refreshLink .fa { padding-left: 5px; }
-.appMenu .menuPane { height: 400px; display: flex; flex-direction: column; }
-.appMenu .menuBody { flex: 1; }
+.appMenu .menuPane { height: 400px; display: flex; display: -ms-flexbox; flex-direction: column; -ms-flex-direction: column; }
+.appMenu .menuBody { flex: 1; -ms-flex: 1; }
 .appMenu .menuBody .dgrid { height: 350px; }
 .appMenu .dgrid-column-id,
 .appMenu .dgrid-column-dossier_uri { width: 100px; }
@@ -152,3 +154,17 @@ $header-height: 50px;
 .input-container { position: relative; width: 100px; height: 20px; display:inline-block; }
 .input-container a { position: absolute; width: 100%; height: 100%; cursor: pointer; display: inline-block; }
 .input-container input[type="file"] { z-index: 2; opacity: 0; position: relative; width: 100%; height: 100%; cursor: pointer; padding: 0; margin: 0; display: inline-block; }
+
+//closeicon dialog
+.dijitDialog .closeText { right: 0px; margin-top: 5px; }
+.dijitDialog .closeText i { margin-right: 10px; }
+
+/* Dgrowl */
+.dGrowl-channel { width: 350px; }
+.dGrowl-notification { width: 320px; }
+.dGrowl-channel-warn .dGrowl-notification { background-color: rgb(255, 217, 162); border: 1px solid rgb(233, 123, 20); }
+
+.hide { display: none !important; }
+
+.dijitDialog .closeText { right: 0px; margin-top: 5px; }
+.dijitDialog .closeText i { margin-right: 10px; }
