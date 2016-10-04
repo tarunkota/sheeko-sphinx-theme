@@ -7,7 +7,7 @@ This is a custom `Sphinx <http://sphinx.pocoo.org/>`_ theme.
 Installing
 ----------
 
-This theme is available on PyPI so you can install it directly by this command
+This theme is available on PyPI so you can install it directly by this command::
 
     pip install oe-sphinx-theme
 
