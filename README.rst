@@ -1,7 +1,7 @@
-OE Sphinx Theme
-================
+Sheeko Sphinx Theme
+===================
 
-This is a custom `Sphinx <http://sphinx.pocoo.org/>`_ theme.
+This is a custom `Sphinx <http://sphinx.pocoo.org/>`_ theme. This project is forked from
 
 
 Installing
